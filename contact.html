@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AJ Solutions Private Limited — Reliable Back-Office & Data Processing Solutions in Bangalore.">
+  <title>Contact — AJ Solutions Private Limited</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">AJ Solutions<span class="dot">.</span></a>
+      <button class="nav-toggle" id="navToggle4" aria-label="Toggle navigation" aria-controls="siteNav4" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav" id="siteNav4" role="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p class="lead">Let's discuss how AJ Solutions can support your operations.</p>
+      </div>
+    </section>
+
+    <section class="contact container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2>Get in touch</h2>
+          <p><strong>Address:</strong><br>Room No. 203, 2nd Floor, 20th 'A' Main Road, BTM Layout, 1st Stage, Bengaluru – 560029, Karnataka</p>
+          <p><strong>Phone:</strong> <a href="tel:09036754833">09036754833</a><br><strong>Email:</strong> <a href="mailto:ajsolutionspvtltd@gmail.com">ajsolutionspvtltd@gmail.com</a></p>
+          <h3>Infrastructure</h3>
+          <ul>
+            <li>Seating Capacity: 100 Members (expandable up to 300)</li>
+            <li>Work Capacity: 10,000 – 50,000 entries per day</li>
+            <li>High-speed internet &amp; power backup</li>
+            <li>Secure data handling and dedicated supervisors</li>
+          </ul>
+        </div>
+
+        <div class="contact-form">
+          <h2>Request a Quote</h2>
+          <form action="mailto:ajsolutionspvtltd@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required>
+            <label for="company">Company</label>
+            <input id="company" name="company" type="text">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+            <button class="btn primary" type="submit">Send Request</button>
+          </form>
+          <p class="disclaimer">Note: This form uses your email client. Alternatively reach us at <a href="mailto:ajsolutionspvtltd@gmail.com">ajsolutionspvtltd@gmail.com</a> or call 09036754833.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer simple-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <strong>AJ Solutions Private Limited</strong>
+      </div>
+      <div class="footer-col">
+        <p><a href="index.html">Home</a></p>
+      </div>
+    </div>
+    <div class="copyright">© <span id="year4"></span> AJ Solutions Private Limited. All rights reserved.</div>
+  </footer>
+
+  <script>
+    (function () {
+      const navToggle = document.getElementById('navToggle4');
+      const siteNav = document.getElementById('siteNav4');
+      if (navToggle && siteNav) {
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.addEventListener('click', () => {
+          const isOpen = siteNav.classList.toggle('open');
+          navToggle.setAttribute('aria-expanded', String(isOpen));
+        });
+      }
+      const y = document.getElementById('year4');
+      if (y) y.textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>

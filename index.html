@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AJ Solutions Private Limited — Reliable Back-Office & Data Processing Solutions in Bangalore.">
+  <title>AJ Solutions Private Limited — Reliable Back-Office & Data Processing Solutions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">AJ Solutions<span class="dot">.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-controls="siteNav" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav" id="siteNav" role="navigation">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Reliable Back-Office &amp; Data Processing Solutions</h1>
+          <p>AJ Solutions Private Limited — scalable, secure and efficient non-voice processing for your business.</p>
+          <p><a class="btn primary" href="contact.html">Get a Quote</a> <a class="btn outline" href="services.html">Our Services</a></p>
+        </div>
+        <div class="hero-image">
+          <div class="image-placeholder" role="img" aria-label="Office illustration">Image</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-preview">
+      <div class="container">
+        <h2 class="section-title">Our Core Services</h2>
+        <p class="section-sub">High-volume data processing &amp; back-office support tailored to your needs.</p>
+        <div class="cards-grid">
+          <article class="card">
+            <h3>Data Entry</h3>
+            <p>Accurate online and offline data entry handled by trained teams.</p>
+          </article>
+          <article class="card">
+            <h3>Excel Data Processing</h3>
+            <p>Complex spreadsheets, formulas and bulk transformations.</p>
+          </article>
+          <article class="card">
+            <h3>Document Digitization</h3>
+            <p>Convert physical documents into structured digital formats.</p>
+          </article>
+          <article class="card">
+            <h3>CRM Data Updating</h3>
+            <p>Regular CRM cleanups and ongoing data hygiene.</p>
+          </article>
+        </div>
+        <p class="more-link"><a href="services.html" class="btn">View All Services</a></p>
+      </div>
+    </section>
+
+    <section class="about-preview">
+      <div class="container split">
+        <div>
+          <h2>About AJ Solutions</h2>
+          <p>AJ Solutions Private Limited is a Bangalore-based back-office support and data processing service provider delivering reliable and scalable outsourcing solutions. We specialize in handling high-volume non-voice processes with trained manpower, structured workflows, and strong quality control systems.</p>
+          <p><a class="btn outline" href="about.html">Learn More</a></p>
+        </div>
+        <div>
+          <h3>Why choose us?</h3>
+          <ul class="checklist">
+            <li>Secure data handling &amp; multi-level quality checks</li>
+            <li>Dedicated supervisors and structured workflows</li>
+            <li>Flexible seating and scalable throughput</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="infrastructure">
+      <div class="container">
+        <h2 class="section-title">Infrastructure &amp; Capacity</h2>
+        <div class="infra-grid">
+          <div class="infra-card">
+            <h4>Seating Capacity</h4>
+            <p>100 Members (expandable up to 300)</p>
+          </div>
+          <div class="infra-card">
+            <h4>Work Capacity</h4>
+            <p>10,000 – 50,000 entries per day</p>
+          </div>
+          <div class="infra-card">
+            <h4>Connectivity &amp; Power</h4>
+            <p>High-speed internet connectivity and power backup</p>
+          </div>
+          <div class="infra-card">
+            <h4>Quality &amp; Security</h4>
+            <p>Secure data handling, dedicated supervisors and multi-level quality checks</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-cta">
+      <div class="container cta-inner">
+        <div>
+          <h2>Ready to scale your operations?</h2>
+          <p>Contact us for a tailored outsourcing proposal and capacity planning.</p>
+        </div>
+        <div>
+          <a class="btn primary" href="contact.html">Contact AJ Solutions</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <strong>AJ Solutions Private Limited</strong>
+        <p>Reliable Back-Office &amp; Data Processing Solutions</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Room No. 203, 2nd Floor, 20th 'A' Main Road<br>BTM Layout, 1st Stage, Bengaluru – 560029</p>
+        <p>Phone: <a href="tel:09036754833">09036754833</a><br>Email: <a href="mailto:ajsolutionspvtltd@gmail.com">ajsolutionspvtltd@gmail.com</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">© <span id="year"></span> AJ Solutions Private Limited. All rights reserved.</div>
+  </footer>
+
+  <script>
+    (function () {
+      const navToggle = document.getElementById('navToggle');
+      const siteNav = document.getElementById('siteNav');
+      if (navToggle && siteNav) {
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.addEventListener('click', () => {
+          const isOpen = siteNav.classList.toggle('open');
+          navToggle.classList.toggle('open');
+          navToggle.setAttribute('aria-expanded', String(isOpen));
+        });
+      }
+      const y = document.getElementById('year');
+      if (y) y.textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>

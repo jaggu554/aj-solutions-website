@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AJ Solutions Private Limited — Reliable Back-Office & Data Processing Solutions in Bangalore.">
+  <title>About — AJ Solutions Private Limited</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">AJ Solutions<span class="dot">.</span></a>
+      <button class="nav-toggle" id="navToggle2" aria-label="Toggle navigation" aria-controls="siteNav2" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav" id="siteNav2" role="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>About AJ Solutions Private Limited</h1>
+        <p class="lead">Reliable Back-Office &amp; Data Processing Solutions</p>
+      </div>
+    </section>
+
+    <section class="about-content container">
+      <h2>Who we are</h2>
+      <p>AJ Solutions Private Limited is a Bangalore-based back-office support and data processing service provider delivering reliable and scalable outsourcing solutions. We specialize in handling high-volume non-voice processes with trained manpower, structured workflows, and strong quality control systems.</p>
+
+      <h3>Our approach</h3>
+      <p>We focus on accuracy, security and predictable delivery. Our teams use documented workflows and multi-level quality checks to ensure data integrity while meeting SLAs.</p>
+
+      <h3>Infrastructure & Team</h3>
+      <ul class="checklist">
+        <li>Seating Capacity: 100 Members (expandable up to 300)</li>
+        <li>Work Capacity: 10,000 – 50,000 entries per day</li>
+        <li>High-speed internet connectivity &amp; power backup</li>
+        <li>Dedicated supervisors and multi-level quality checks</li>
+      </ul>
+
+      <p>We pride ourselves in building long-term partnerships by offering transparent processes and competitive pricing.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer simple-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <strong>AJ Solutions Private Limited</strong>
+      </div>
+      <div class="footer-col">
+        <p><a href="contact.html">Contact Us</a></p>
+      </div>
+    </div>
+    <div class="copyright">© <span id="year2"></span> AJ Solutions Private Limited. All rights reserved.</div>
+  </footer>
+
+  <script>
+    (function () {
+      const navToggle = document.getElementById('navToggle2');
+      const siteNav = document.getElementById('siteNav2');
+      if (navToggle && siteNav) {
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.addEventListener('click', () => {
+          const isOpen = siteNav.classList.toggle('open');
+          navToggle.setAttribute('aria-expanded', String(isOpen));
+        });
+      }
+      const y = document.getElementById('year2');
+      if (y) y.textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>

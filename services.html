@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AJ Solutions Private Limited — Reliable Back-Office & Data Processing Solutions in Bangalore.">
+  <title>Services — AJ Solutions Private Limited</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">AJ Solutions<span class="dot">.</span></a>
+      <button class="nav-toggle" id="navToggle3" aria-label="Toggle navigation" aria-controls="siteNav3" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav" id="siteNav3" role="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Our Services</h1>
+        <p class="lead">Comprehensive back-office and data processing services</p>
+      </div>
+    </section>
+
+    <section class="services-list container">
+      <div class="cards-grid large">
+        <article class="card">
+          <h3>Data Entry (Online / Offline)</h3>
+          <p>High accuracy data entry from multiple sources with rapid turnaround.</p>
+        </article>
+        <article class="card">
+          <h3>Excel Data Processing</h3>
+          <p>Data cleansing, formula-based transformations, pivot-ready outputs.</p>
+        </article>
+        <article class="card">
+          <h3>Form Filling Projects</h3>
+          <p>Bulk form filling services with validation and error reporting.</p>
+        </article>
+        <article class="card">
+          <h3>Document Digitization</h3>
+          <p>Scanning, OCR validation and structured output in Excel/CSV.</p>
+        </article>
+        <article class="card">
+          <h3>CRM Data Updating</h3>
+          <p>Standardize and enrich your CRM data for better sales outcomes.</p>
+        </article>
+        <article class="card">
+          <h3>E-commerce Product Listing</h3>
+          <p>Catalog creation, image handling and upload-ready product sheets.</p>
+        </article>
+        <article class="card">
+          <h3>PDF to Excel / Word Conversion</h3>
+          <p>Accurate extraction and formatting from PDFs to editable formats.</p>
+        </article>
+        <article class="card">
+          <h3>Data Collection &amp; Compilation</h3>
+          <p>Web research, data aggregation and clean compilation into reports.</p>
+        </article>
+        <article class="card">
+          <h3>Back Office Process Support</h3>
+          <p>End-to-end non-voice process handling with SLA-driven delivery.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer simple-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <strong>AJ Solutions Private Limited</strong>
+      </div>
+      <div class="footer-col">
+        <p><a href="contact.html">Request a Quote</a></p>
+      </div>
+    </div>
+    <div class="copyright">© <span id="year3"></span> AJ Solutions Private Limited. All rights reserved.</div>
+  </footer>
+
+  <script>
+    (function () {
+      const navToggle = document.getElementById('navToggle3');
+      const siteNav = document.getElementById('siteNav3');
+      if (navToggle && siteNav) {
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.addEventListener('click', () => {
+          const isOpen = siteNav.classList.toggle('open');
+          navToggle.setAttribute('aria-expanded', String(isOpen));
+        });
+      }
+      const y = document.getElementById('year3');
+      if (y) y.textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
