@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="200" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">AJ Solutions Private Limited logo</title>
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0b66d0"/>
+      <stop offset="100%" stop-color="#064a9a"/>
+    </linearGradient>
+    <filter id="s" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0b66d0" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- icon -->
+  <g filter="url(#s)">
+    <rect x="12" y="12" width="120" height="120" rx="18" ry="18" fill="url(#g1)"/>
+    <g transform="translate(36,36) scale(1.6)" fill="#fff" font-family="Segoe UI, Roboto, Arial" font-weight="700">
+      <text x="0" y="36" font-size="52">AJ</text>
+    </g>
+  </g>
+
+  <!-- wordmark -->
+  <g transform="translate(160,80)" fill="#09223a" font-family="Segoe UI, Roboto, Arial">
+    <text x="0" y="-6" font-size="36" font-weight="700">AJ Solutions</text>
+    <text x="0" y="28" font-size="16" fill="#475569">Reliable Back-Office &amp; Data Processing Solutions</text>
+  </g>
+</svg>
