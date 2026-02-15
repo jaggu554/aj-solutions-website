@@ -22,3 +22,5 @@ Notes
 - Images placeholder located in the `images/` folder.
 
 If you want, I can create a GitHub repo and push the project for you (requires `gh` CLI or manual authorization).
+
+Contact: info@ajsolutionsco.com
