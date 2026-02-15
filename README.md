@@ -24,3 +24,7 @@ Notes
 If you want, I can create a GitHub repo and push the project for you (requires `gh` CLI or manual authorization).
 
 Contact: info@ajsolutionsco.com
+
+Company (Legal): AJ SOLUTIONS PVT LTD
+CIN: U82190KA2025PTC212767 | PAN: ABECA4014A | TAN: BLRA58529C
+GST: 29ABECA4014A1ZA
